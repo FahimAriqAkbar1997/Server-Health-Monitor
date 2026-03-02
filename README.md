@@ -1,4 +1,4 @@
-Server Health Monitor — Robot Framework
+# Server Health Monitor — Robot Framework
 
 A beginner-friendly automated server health monitoring project built with Robot Framework and Python. Tests CPU, memory, and disk usage across multiple servers using mock data — no real servers required.
 
@@ -10,21 +10,7 @@ Building reusable Python keyword libraries
 Organizing test data separately from test logic
 Running automated tests from the command line and reading HTML reports
 
-
-📁 Project Structure
-PythonProject1/
-├── data/
-│   └── mock_servers.json        # Mock server metrics (cpu, memory, disk)
-├── resources/
-│   └── server_keywords.py       # Python functions exposed as Robot keywords
-├── tests/
-│   └── server_health.robot      # Robot Framework test cases
-├── results/
-│   ├── log.html                 # Detailed test log (auto-generated)
-│   └── report.html              # Test summary report (auto-generated)
-└── README.md
-
-⚙️ How Robot Framework Is Used
+# How Robot Framework Is Used
 Keywords (resources/server_keywords.py)
 Custom Python functions are exposed as Robot Framework keywords. Each function checks one health metric for a given server IP and returns True (healthy) or False (unhealthy):
 pythondef check_cpu_usage(server_ip, threshold=80):
@@ -48,7 +34,7 @@ json{
   ]
 }
 
-🚀 Setup & Installation
+# Setup & Installation
 1. Clone the repository
 bashgit clone https://github.com/YOUR_USERNAME/PythonProject1.git
 cd PythonProject1
@@ -63,17 +49,17 @@ source .venv/bin/activate
 3. Install dependencies
 bashpip install robotframework psutil
 
-▶️ Running the Tests
+# Running the Tests
 bashrobot tests/server_health.robot
 To save results to a specific folder:
 bashrobot --outputdir results tests/server_health.robot
 Then open results/report.html in your browser to view the full test report.
 
-🎯 Expected Results
+# Expected Results
 ServerCPUMemoryDiskResultweb-server-0145%62%55%✅ All checks passdb-server-0172%87%40%❌ Memory exceeds 80% thresholdbackup-server-0110%30%95%❌ Disk exceeds 90% threshold
 The failures are intentional — they demonstrate the monitoring system correctly detecting servers that need attention.
 
-🛠️ Technologies Used
+# Technologies Used
 
 Robot Framework — keyword-driven test automation
 Python 3 — custom keyword library
