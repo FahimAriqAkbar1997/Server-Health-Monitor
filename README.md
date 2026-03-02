@@ -1,5 +1,7 @@
 # Server Health Monitor — Robot Framework
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+
 A beginner-friendly automated server health monitoring project built with **Robot Framework** and **Python**. Tests CPU, memory, and disk usage across multiple servers using mock data — no real servers required.
 
 ---
