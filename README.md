@@ -33,7 +33,7 @@ PythonProject1/
 
 ---
 
-## ⚙️ How Robot Framework Is Used
+## How Robot Framework Is Used
 
 ### Keywords (`resources/server_keywords.py`)
 Custom Python functions are exposed as **Robot Framework keywords**. Each function checks one health metric for a given server IP and returns `True` (healthy) or `False` (unhealthy):
@@ -71,7 +71,7 @@ Server metrics are stored in a JSON file, making it easy to simulate different s
 
 ---
 
-## 🚀 Setup & Installation
+## Setup & Installation
 
 **1. Clone the repository**
 ```bash
@@ -97,7 +97,7 @@ pip install robotframework psutil
 
 ---
 
-## ▶️ Running the Tests
+## Running the Tests
 
 ```bash
 robot tests/server_health.robot
@@ -112,7 +112,7 @@ Then open `results/report.html` in your browser to view the full test report.
 
 ---
 
-## 🎯 Expected Results
+## Expected Results
 
 | Server | CPU | Memory | Disk | Result |
 |---|---|---|---|---|
@@ -124,7 +124,7 @@ The failures are **intentional** — they demonstrate the monitoring system corr
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - [Robot Framework](https://robotframework.org/) — keyword-driven test automation
 - [Python 3](https://www.python.org/) — custom keyword library
