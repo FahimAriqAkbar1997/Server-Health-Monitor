@@ -1,0 +1,28 @@
+{
+  "servers": [
+    {
+      "name": "web-server-01",
+      "ip": "192.168.1.10",
+      "cpu": 45,
+      "memory": 62,
+      "disk": 55,
+      "status": "online"
+    },
+    {
+      "name": "db-server-01",
+      "ip": "192.168.1.20",
+      "cpu": 72,
+      "memory": 87,
+      "disk": 40,
+      "status": "online"
+    },
+    {
+      "name": "backup-server-01",
+      "ip": "192.168.1.30",
+      "cpu": 10,
+      "memory": 30,
+      "disk": 95,
+      "status": "online"
+    }
+  ]
+}
